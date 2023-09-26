@@ -1,5 +1,9 @@
 spring:
+  session:
+    storage-type: redis
+#    session: storage-type = 기본 세션에 저장하는 값을 redis에 저장하겠다는 의미
   data:
     redis:
       host: localhost
       port: 6379
+

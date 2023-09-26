@@ -20,7 +20,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-redis'
     implementation 'org.projectlombok:lombok:1.18.22'
-
+    implementation 'org.springframework.session:spring-session-data-redis'      // redis를 세션으로 사용하기 위한 의존성 추가
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
 }
