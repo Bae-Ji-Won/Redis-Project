@@ -1,6 +1,5 @@
-package com.example.redisproject.Controller;
+package com.example.redisproject.controller;
 
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
