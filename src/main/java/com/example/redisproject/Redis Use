@@ -1,0 +1,10 @@
+- Redis에 접속하는 법
+1. Redis 파일안에 bin폴더안에 접속
+docker exec -it my-redis /bin/sh
+
+2. Redis 접속
+redis-cli
+
+- Redis 간단 문법
+1. 저장된 모든 값 출력
+keys *
