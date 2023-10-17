@@ -1,10 +1,13 @@
 package com.example.redisproject.service;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ExternalApiService {
+    
+    // UserService에서 Redis 자체적으로 캐싱 사용
     public String getUserName(String userId){
         
         // DB대신 사용하는 공간
@@ -22,6 +25,8 @@ public class ExternalApiService {
         return "";
     }
 
+    // Spring 캐싱을 Redis로 사용
+    @Cacheable(cacheNames = "userAgeCache", key = "#userId")
     public int getUserAge(String userId){
         // 외부 서비스나 DB 호출
 
