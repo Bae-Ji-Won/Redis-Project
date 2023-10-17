@@ -25,7 +25,7 @@ public class UserService {
     public UserProfile getUserProfile(String userId){
         String userName = null;
 
-        // Redis에  저장(캐시 사용 목적)
+        // Redis에 자체적으로 저장(캐시 사용 목적)
         ValueOperations<String , String> ops = redisTemplate.opsForValue(); // Redis 데이터 사용하기 위한 코드
         String cachedName = ops.get("nameKey:"+userId);         //  Redis안에 nameKey:userId의 형식의 Key이름을 가지는 Key의 Value를 가져옴
         if(cachedName != null){         // 만약 있다면 해당 값을 Redis에 저장된 Value값을 가져옴(캐싱에 저장된 값 가져옴 - DB까지 가지 않음)
@@ -37,7 +37,7 @@ public class UserService {
         }
 
        // String userName = externalApiService.getUserName(userId);         -- redis에 캐시 저장 후 이미 저장된 캐시 가져오기
-        int userAge = externalApiService.getUserAge(userId);
+        int userAge = externalApiService.getUserAge(userId);        // Spring 캐시를 Redis로 사용하여 호출함
 
         return new UserProfile(userName,userAge);
     }
