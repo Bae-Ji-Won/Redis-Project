@@ -1,4 +1,4 @@
-package com.example.redisproject.controller;
+package com.example.redisproject.Cache.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
