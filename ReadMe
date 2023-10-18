@@ -1,4 +1,9 @@
 Redis를 활용한 기능 구현
+- Cache Branch
 1. 세션을 활용한 데이터 저장
 2. Redis 자체적으로만 캐싱 사용
 3. Spring 캐싱(Redis연결)을 활용한 데이터 저장
+
+- LeaderBoard Branch
+1. Redis Sort 함수를 통해 랭크 순위 호출
+

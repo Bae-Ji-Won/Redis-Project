@@ -1,4 +1,4 @@
-package com.example.redisproject.service;
+package com.example.redisproject.Cache.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.cache.annotation.Cacheable;

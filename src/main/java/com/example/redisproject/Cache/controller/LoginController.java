@@ -1,4 +1,4 @@
-package com.example.redisproject.controller;
+package com.example.redisproject.Cache.controller;
 
 import jakarta.servlet.http.HttpSession;
 import org.springframework.web.bind.annotation.GetMapping;

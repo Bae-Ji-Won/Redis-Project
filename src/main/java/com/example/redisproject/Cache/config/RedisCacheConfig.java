@@ -1,4 +1,4 @@
-package com.example.redisproject.config;
+package com.example.redisproject.Cache.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

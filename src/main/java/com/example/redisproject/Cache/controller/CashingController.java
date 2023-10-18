@@ -1,9 +1,8 @@
-package com.example.redisproject.controller;
+package com.example.redisproject.Cache.controller;
 
-import com.example.redisproject.dto.UserProfile;
-import com.example.redisproject.service.UserService;
+import com.example.redisproject.Cache.dto.UserProfile;
+import com.example.redisproject.Cache.service.UserService;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

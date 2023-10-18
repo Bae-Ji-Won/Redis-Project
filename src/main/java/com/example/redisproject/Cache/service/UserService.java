@@ -1,9 +1,6 @@
-package com.example.redisproject.service;
+package com.example.redisproject.Cache.service;
 
-import com.example.redisproject.dto.UserProfile;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
+import com.example.redisproject.Cache.dto.UserProfile;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
