@@ -1,6 +1,5 @@
-package com.example.redisproject.LeaderBoard.service;
+package com.example.redisproject.LeaderBoardRank.service;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations;

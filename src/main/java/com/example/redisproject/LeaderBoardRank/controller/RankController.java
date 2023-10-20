@@ -1,9 +1,7 @@
-package com.example.redisproject.LeaderBoard.controller;
+package com.example.redisproject.LeaderBoardRank.controller;
 
-import com.example.redisproject.LeaderBoard.service.RankingService;
-import lombok.RequiredArgsConstructor;
+import com.example.redisproject.LeaderBoardRank.service.RankingService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
