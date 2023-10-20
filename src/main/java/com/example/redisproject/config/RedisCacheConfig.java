@@ -1,4 +1,4 @@
-package com.example.redisproject.Cache.config;
+package com.example.redisproject.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -27,7 +27,7 @@ public class RedisCacheConfig {
 
         HashMap<String, RedisCacheConfiguration> configMap = new HashMap<>();
         configMap.put("userAgeCache", RedisCacheConfiguration.defaultCacheConfig()
-                .entryTtl(Duration.ofSeconds(5)));  // 특정 캐시에 대한 TTL   (5초만 Redis에 데이터 저장시킴)
+                .entryTtl(Duration.ofSeconds(3600)));  // 특정 캐시에 대한 TTL   (5초만 Redis에 데이터 저장시킴)
 
         return RedisCacheManager
                 .RedisCacheManagerBuilder
