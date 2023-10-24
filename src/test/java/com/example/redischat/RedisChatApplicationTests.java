@@ -1,10 +1,10 @@
-package com.example.redisproject;
+package com.example.redischat;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RedisProjectApplicationTests {
+class RedisChatApplicationTests {
 
     @Test
     void contextLoads() {

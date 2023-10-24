@@ -4,6 +4,16 @@ Redis를 활용한 기능 구현
 2. Redis 자체적으로만 캐싱 사용
 3. Spring 캐싱(Redis연결)을 활용한 데이터 저장
 
+
 - LeaderBoard Branch
 1. Redis Sort 함수를 통해 랭크 순위 호출
+2. Test를 통해 일반적인 방식과 Redis사용하여 호출할때의 시간 비교
+
+
+- Redis Pub/Sub  (프로젝트 패키지 별도 구성, 실행파일에 CommandLineRunner 형식 상속)
+1. 채팅방 개설(Web을 사용하지 않고 커맨드를 통해 작성 - Web사용시 프론트 디자인 해야함)
+2. build를 통해 생성된 jar 파일을 cmd에서 실행하여 채팅방 동작 확인
+동작 과정
+ - 프로그램 실행시 chat1 채팅방 생성
+ - 메인 main redis에서 메세지 입력시 build를 통해 실행한 cmd화면에 해당 메세지 출력됨
 
