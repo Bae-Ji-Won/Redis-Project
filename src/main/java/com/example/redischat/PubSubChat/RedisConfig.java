@@ -9,6 +9,7 @@ import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 @Configuration
 public class RedisConfig {
 
+    // Redis Pub/Sub 메세지 전송 수신에 필요한 인스턴스
     @Bean
     public RedisConnectionFactory redisConnectionFactory(){
         return new LettuceConnectionFactory();
