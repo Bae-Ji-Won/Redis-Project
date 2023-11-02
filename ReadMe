@@ -27,3 +27,4 @@ https://velog.io/@qowl880/Redis-Redis-%EB%B0%B1%EC%97%85%EB%B3%B5%EA%B5%AC-%EB%B
  (2) 재시작 시 RDB 파일이 있으면 읽어서 복구
 
 2. AOF를 활용한 백업
+ (1) 실시간으로 데이터 저장
